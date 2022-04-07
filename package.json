@@ -2,7 +2,7 @@
   "name": "entities-dom-decode",
   "repository": "github:fabiospampinato/entities-dom-decode",
   "description": "A ~200 bytes function with no dependencies for decoding HTML entities, it only works in the browser.",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "type": "module",
   "main": "dist/index.js",
   "exports": "./dist/index.js",
