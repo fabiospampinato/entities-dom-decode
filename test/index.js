@@ -1,11 +1,11 @@
 
 /* IMPORT */
 
-import 'jsdom-global/register';
-import {describe} from 'ava-spec';
-import decode from '../dist';
+import 'jsdom-global/register.js';
+import {describe} from 'fava';
+import decode from '../dist/index.js';
 
-/* ENTITIES DOM DECODE */
+/* MAIN */
 
 describe ( 'decode', it => {
 
