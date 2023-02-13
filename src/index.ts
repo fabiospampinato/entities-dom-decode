@@ -11,11 +11,13 @@ const decode = ( str: string ): string => {
 
   return str.replace ( entityRe, ( _: string, entity: string ) => {
 
-    if ( entity in cache ) return cache[entity];
+    const cached = cache[entity];
+
+    if ( cached ) return cached;
 
     element.innerHTML = entity;
 
-    return cache[entity] = element.textContent || entity;
+    return cache[entity] = ( element.textContent || entity );
 
   });
 

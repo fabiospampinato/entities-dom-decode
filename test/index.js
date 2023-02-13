@@ -1,7 +1,7 @@
 
 /* IMPORT */
 
-import 'jsdom-global/register.js';
+import 'domino-global';
 import {describe} from 'fava';
 import decode from '../dist/index.js';
 
@@ -32,7 +32,11 @@ describe ( 'decode', it => {
       ['Foo &#xA9; bar &#x1D306; baz &#x2603; qux', 'Foo © bar 𝌆 baz ☃ qux']
     ];
 
-    tests.forEach ( ([ encoded, decoded ]) => t.is ( decode ( encoded ), decoded ) );
+    tests.forEach ( ([ encoded, decoded ]) => {
+
+      t.is ( decode ( encoded ), decoded );
+
+    });
 
   });
 
