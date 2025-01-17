@@ -17,7 +17,9 @@ npm install --save entities-dom-decode
 ```ts
 import decode from 'entities-dom-decode';
 
-decode ( '&amp;&#x3a;' ); // => '&:'
+// Let's decode some HTML entities
+
+decode ( 'foo&amp;&#x3a;bar' ); // => 'foo&:bar'
 ```
 
 ## License
