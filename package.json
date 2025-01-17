@@ -3,7 +3,7 @@
   "repository": "github:fabiospampinato/entities-dom-decode",
   "description": "A ~200 bytes function with no dependencies for decoding HTML entities, it only works in the browser.",
   "license": "MIT",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "type": "module",
   "main": "dist/index.js",
   "exports": "./dist/index.js",
